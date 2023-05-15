@@ -1,0 +1,64 @@
+/* Defines styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Document body styles */
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #4257e0, #520a7e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* styles for the watch*/
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 20px;
+    box-shadow: -3px 10px 20px rgba(238, 234, 234, 0.8);
+}
+
+/* Styles for the watch's internal elements */
+.clock div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: black;
+    box-shadow: -1px 1px 15px rgba(8, 8, 8, 0.8);
+    border-top-right-radius: 50%;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Styles when cursor is over clock elements */
+.clock div:hover {
+    background-color: #4257e0;
+}
+
+/* Styles for the 'span' elements within the clock */
+.clock span {
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+/* Styles for the 'span' elements with the 'time' class inside the clock */
+.clock span.tempo {
+    font-size: 15px;
+}
+
+
+
+
